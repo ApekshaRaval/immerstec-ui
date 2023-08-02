@@ -1,0 +1,44 @@
+@import './variable';
+@import './font';
+
+@mixin Button($bgColor, $borderColor, $fontColor ) {
+    background-color: $bgColor;
+    color: $fontColor;
+    padding: 15px 24px;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    font-family: $primaryFont;
+    font-size: $font22;
+    box-shadow: $btn-boxShadow;
+    font-weight: $fwBold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@mixin Input($height: 55px, $padding: 20px, $font: 18px){
+    background-color: $grey;
+    box-shadow: $input-boxShadow;
+    padding: $padding;
+    border-radius: 5px;
+    border: 1px solid $grey;
+    height: $height;
+    font-size: $font;
+    font-weight: $fwBold;
+    &:focus{
+        box-shadow: $input-boxShadow;
+        outline: 0;
+        // box-shadow: none;
+        border: $grey;
+        background-color: $grey;
+    }
+}
+@mixin placeholder {
+    opacity: 0.5 !important;
+    color: $darkGrey;
+    font-weight: $fwBold;
+    font-size: $font18;
+}
+@mixin select($height: 60px, $padding: 20px, $font: 16px) {
+    height: $height;
+    box-shadow: $input-boxShadow;
+}

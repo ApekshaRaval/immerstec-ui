@@ -1,0 +1,29 @@
+/** 
+* Importing the font files into the project.
+*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('trueType');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format('trueType');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Black.ttf) format('trueType');
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf) format('trueType');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  

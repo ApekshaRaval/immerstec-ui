@@ -1,0 +1,124 @@
+
+@import "./variable";
+@import "./font";
+
+.row>* {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+   
+}
+.row{
+    --bs-gutter-x: -1.5rem;
+}
+.login {
+  text-align: left;
+  font-family: $primaryFont;
+  .loginimg {
+    height: 100vh !important;
+  }
+  .logo {
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 78px;
+    width: 188px;
+    height: 29px;
+    padding: 0px;
+  }
+  .loginform {
+    margin-top: 249px;
+    margin-left: 78px;
+    width: 400px;
+    input {
+      border-radius: 0px;
+    }
+    .heading {
+      color: $darkGrey;
+      font-size: $font34;
+      font-weight: $fwBold;
+      margin-bottom: 28px !important;
+    }
+    label {
+      color: $darkGrey;
+      font-size: $font18;
+      font-weight: $fwBold;
+    }
+    .group {
+      margin-bottom: 0px !important;
+    }
+    .loginbtn {
+      background-color: $purple;
+      border-radius: 3px;
+      width: 100%;
+      height: 65px;
+      border-color: $purple;
+      font-size: $font22;
+      font-weight: $fwBold;
+      margin-top: 36px;
+    }
+  }
+  @media (max-width: map-get($mediaSizes, "xl")) {
+    
+    .logo {
+        margin-left: 28px;
+        width: 150px;
+        height: 22px;
+
+    }
+    .loginform {
+        margin-left: 28px;
+        margin-right: 0px !important;
+        width: 320px;
+        .heading {
+            font-size: $font22;
+            font-weight: $fwBold;
+            margin-bottom: 28px !important;
+          }
+    }
+  }
+  @media (max-width: map-get($mediaSizes, "md")) {
+    
+    .logo {
+        margin-left: 28px;
+        width: 150px;
+        height: 22px;
+        
+
+    }
+    .loginform {
+        margin-left: 28px;
+        margin-right: 0px !important;
+        width: 320px;
+        .heading {
+            font-size: $font22;
+            font-weight: $fwBold;
+            margin-bottom: 28px !important;
+          }
+    }
+  }
+  @media (max-width: map-get($mediaSizes, "sm")) {
+    .logo {
+      margin-left: 18px;
+      margin-top: 200px;
+    }
+    .loginimg {
+      display: none;
+    }
+    .loginform {
+        margin-left: 18px;
+        margin-top: 250px;
+        width: 400px;
+    }
+  }
+  @media (max-width: map-get($mediaSizes, "xs")) {
+    .logo {
+       margin-left:0px;
+        margin-top: 200px;
+      }
+    .loginform {
+        margin-left:0px;
+        margin-top: 250px;
+      width: 300px;
+    }
+  }
+
+}

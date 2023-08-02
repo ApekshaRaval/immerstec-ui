@@ -1,0 +1,69 @@
+@import './font';
+/* Defining the breakpoints for the media queries. */
+$mediaSizes: (
+    'xs': 375px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+// Accessing the values of the map
+$sm: map-get($mediaSizes, 'xs');
+$sm: map-get($mediaSizes, 'sm');
+$md: map-get($mediaSizes, 'md');
+$lg: map-get($mediaSizes, 'lg');
+$xl: map-get($mediaSizes, 'xl');
+$xxl: map-get($mediaSizes, 'xxl');
+
+/* Defining the colors that will be used in the project. */
+$primary: #3361FF;
+$white: #fff;
+$grey: #EFF2F9;
+$darkGrey: #4D5E80;
+$lightPrimary: #cccafe;
+$selectBorderColor: #DBE7FF;
+$btn-boxShadow:0px 10px 30px #26334D27;
+$btn-hover-shadow: inset 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+$input-boxShadow: 0px 10px 30px #26334D0D;
+$box-shadow: 0px 2px 5px #26334D3B;
+$sidebar-shadow: 0px 2px 20px #00000050;
+
+
+$primaryHover: #939aac;
+$black: #000000;
+$purple: #7367f0;
+$purple-light: #f0efff;
+$blue: #86b7fe;
+$grey-1: #b5b5b5;
+$inValidRed: #dc3545;
+$card-blue: #57a5ff;
+$card-green: #47ddbf;
+$card-yellow: #fcc168;
+$card-pink: #f97088;
+$border: #ebe9f1;
+$sidebar-active: rgb(235 236 237 / 15%);
+$datatable-pagination: #333;
+
+// $box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+//Font Family
+$primaryFont: 'Roboto', sans-serif;
+$fwBold: 700;
+
+// font size 
+$font18: 18px;
+$font16: 16px;
+$font22: 22px;
+$font34: 34px;
+
+/* A mixin that is used to hide data. */
+@mixin hideData {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}
+
+

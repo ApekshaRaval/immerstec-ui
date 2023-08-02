@@ -1,0 +1,48 @@
+.login {
+  position: relative;
+}
+.login .login-img {
+  width: 890px;
+  opacity: 1;
+  height: 909px;
+}
+.login .logo {
+  position: absolute;
+  top: 188px;
+  left: 968px;
+  height: 29px;
+}
+.login .loginform {
+  position: absolute;
+  top: 249px;
+  text-align: left;
+  left: 968px;
+  width: 400px;
+}
+.login .loginform input {
+  border-radius: 0px;
+}
+.login .loginform .heading {
+  color: #4D5E80;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 28px !important;
+}
+.login .loginform label {
+  color: #4D5E80;
+  font-size: 18px;
+  font-weight: 600;
+}
+.login .loginform .group {
+  margin-bottom: 0px !important;
+}
+.login .loginform .loginbtn {
+  background-color: #3361FF;
+  border-radius: 3px;
+  width: 100%;
+  height: 65px;
+  border-color: #3361FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 36px;
+}/*# sourceMappingURL=login.css.map */
